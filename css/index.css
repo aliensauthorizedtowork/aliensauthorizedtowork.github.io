@@ -1,0 +1,62 @@
+:root {
+    --header-height: 5rem;
+    --theme-1: var(--purple);
+    --theme-background: #111111;
+    --text-color: #d1d1d1
+}
+
+body {
+    background-color: var(--theme-background);
+    color: var(--text-color);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--header-height);
+    width: 100%;
+}
+
+header, hr {
+    border-bottom: solid 3px transparent;
+    border-image: linear-gradient(to right, var(--theme-background), var(--theme-1), var(--theme-background)) 0 0 1 0;
+}
+
+header img {
+    height: 100%;
+}
+
+main {
+    margin-top: calc(var(--header-height) + 1rem);
+}
+
+h1, h2, h3 {
+    color: var(--text-color)
+}
+
+hr {
+    width: 60%
+}
+
+/*div.divider {*/
+/*    overflow: hidden;*/
+/*    align-items: center;*/
+/*    background: var(--orange);*/
+/*    color: var(--theme-background);*/
+/*    height: 1rem;*/
+/*    line-height: 1rem;*/
+/*    display: flex;*/
+/*    margin-bottom: 1rem;*/
+/*}*/
+
+/*.divider::before, .divider::after {*/
+/*    background: var(--theme-background);*/
+/*    padding: 1rem 0;*/
+/*    height: 0;*/
+/*    transform: rotate(45deg);*/
+/*    flex: 1;*/
+/*    content: "";*/
+/*}*/
